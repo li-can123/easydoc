@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <title>easydoc</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../bower_components/fontawesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    <!-- editormd -->
+    <link rel="stylesheet" href="../editormd/css/editormd.css" />
+    
+    <style type="text/css">
+        .frm-table {}
+        .frm-table th{padding: 0 10px;}
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <!-- Page Content -->
+        <div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12" style="padding-top: 10px;">
+                        <div id="operateBar" style="display: none;"> </div>
+                        <div class="panel panel-default">
+	                        <div class="panel-heading">基本信息</div>
+	                        <div class="panel-body">
+	                           <table class="frm-table">
+	                               <tr>
+	                                   <th>文档名称</th><td><input id="name" class="form-control" placeholder="文档名称"/></td>
+	                                   <th>所属目录</th><td>
+	                                       <select id="parentResSel"></select>
+	                                   </td>
+	                                   <td><button id="newFolderBtn" type="button" class="btn btn-link">新建目录</button></td>
+	                               </tr>
+	                           </table>
+	                        </div>
+	                    </div>
+	                    <div class="opt-btn">
+	                       <button id="btn-insertApiTpl" type="button" class="btn btn-default">插入API模板</button>
+	                    </div>
+                        <div id="editormdView">
+			               <textarea id="docVontent" style="display:none;" name="test-editormd-markdown-doc"></textarea>               
+			            </div>
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+    
+    <!-- editormd -->
+    <script src="../editormd/editormd.min.js"></script>
+    
+    <!-- app js -->
+    <script src="../js/sdk.js"></script>
+    <script src="../js/ApiUtil.js"></script>
+    <script src="../js/form.js"></script>
+
+</body>
+
+</html>
